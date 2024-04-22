@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  display: flex;
+  min-height: 20vh;
+  flex-direction: column;
+}
+
+.title h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.title hr {
+  border: none;
+  width: 220px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgb(187, 194, 202);
+}
+.projects {
+  min-height: 70vh;
+  display: flex;
+  gap: 50px;
+  align-items: flex-end;
+}
+
+.projects h2 {
+  color: aliceblue;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.projects p {
+  color: aliceblue;
+  letter-spacing: 1px;
+}
+.projects img {
+  width: 300px;
+  height: 200px;
+  transition: all 1s ease-in-out;
+  &:hover {
+    scale: 1.1;
+  }
+}
