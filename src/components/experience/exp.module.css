@@ -1,0 +1,65 @@
+@import "../../vars.css";
+
+.container {
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.cardContainer {
+  flex: 2;
+  margin-left: 50px;
+}
+
+.imageContainer {
+  margin-top: 50px;
+  margin-right: 60px;
+  flex: 1;
+  position: relative;
+}
+
+.image {
+  height: 400px;
+  object-fit: contain;
+  width: 400px;
+  animation-name: floating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 2.5rem;
+  color: var(--color-text);
+  margin-bottom: 10px;
+  font: 700 40px var(--font-roboto);
+  letter-spacing: 1.75px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+  }
+}
